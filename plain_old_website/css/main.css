@@ -26,17 +26,18 @@ a {
 
 body {
     background: var(--bg);
-    margin-left: 40px;
-    margin-right: 60px;
+    margin-left: 6vw;
+    margin-right: 10vw;
 }
 
-body h1 h2 h3 h4 {
+h1 h2 h3 h4 {
     color: var(--highlight)
 }
 
-body p {
-    margin-left: 20px;
-    margin-right: 20px;
+p {
+    margin-left: 4vw;
+    margin-right: 4vw;
+    /* font-size: 2vw; */
 }
 
 /* ul {
@@ -63,17 +64,18 @@ h1 {
 header nav {
     display: inline-block;
     position: fixed;
-    right: 20px;
+    right: 2%;
     top: 35px;
 }
 
-header nav a {
+/* header nav a {
     margin-left: 10px;
-}
+} */
 
 .title {
     /* margin-left: -20px; */
-    color: var(--highlight)
+    color: var(--highlight);
+    font-size: 5vw;
 }
 
 .main {
@@ -125,13 +127,15 @@ header nav a {
 .theme:focus {outline-style: none;}
 
 .lnk {
-    border: 2px solid;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    position: relative;
+    border: 0.4vw solid;
+    padding-left: 0.8vw;
+    padding-right: 0.8vw;
+    padding-top: 0.4vw;
+    padding-bottom: 0.4vw;
     border-color: var(--btnFontColor);
     background-color: var(--btnFontColor);
+    font-size: 2.5vw;
 }
 .lnk:hover {
     /* border-color: var(--highlight); */
