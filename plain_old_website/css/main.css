@@ -1,0 +1,146 @@
+:root {
+    --black: #282828;
+    --red: #cc241d;
+    --yellow: #d79921;
+    --blue: #458588;
+    --purple: #b16286;
+    --aqua: #689d6a;
+    --green: #98971a;
+    --orange: #d65d0e;
+    --gray: #a89984;
+    --white: #d5c4a1;
+    /* --white: #bdae93; */
+
+    --lightColor: var(--blue);
+    --darkColor: var(--black);
+}
+
+*{
+    color: var(--fontColor);
+    font-family: 'Space Mono', monospace;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background: var(--bg);
+    margin-left: 40px;
+    margin-right: 60px;
+}
+
+body h1 h2 h3 h4 {
+    color: var(--highlight)
+}
+
+body p {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* ul {
+    font-family: monospace;
+} */
+
+li {
+    list-style: circle;
+}
+
+header {
+    white-space: nowrap;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--bg);
+}
+
+h1 {
+    display: inline-block;
+    /* margin-left: -20px; */
+}
+
+header nav {
+    display: inline-block;
+    position: fixed;
+    right: 20px;
+    top: 35px;
+}
+
+header nav a {
+    margin-left: 10px;
+}
+
+.title {
+    /* margin-left: -20px; */
+    color: var(--highlight)
+}
+
+.main {
+    margin-top: 100px;
+}
+
+.btn {
+    border-radius: 3px;
+    font-size: medium;
+}
+
+.list {
+    list-style: square;
+}
+
+.highlight {
+    color: var(--highlight);
+}
+
+/* #msg {
+    font-family: monospace;
+} */
+
+.light-theme {
+    --bg: var(--lightColor);
+    --fontColor: var(--darkColor);
+    --btnBg: var(--darkColor);
+    --btnFontColor: var(--lightColor);
+    --highlight: var(--white);
+}
+.dark-theme {
+    --bg: var(--darkColor);
+    --fontColor: var(--lightColor);
+    --btnBg: var(--lightColor);
+    --btnFontColor: var(--darkColor);
+    --highlight: var(--gray);
+}
+
+.theme {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    height: 7%;
+    width: 7%;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+    border: none;
+}
+.theme:focus {outline-style: none;}
+
+.lnk {
+    border: 2px solid;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-color: var(--btnFontColor);
+    background-color: var(--btnFontColor);
+}
+.lnk:hover {
+    /* border-color: var(--highlight); */
+    color: var(--highlight);
+}
+
+.current {
+    border-color: var(--btnBg);
+    color: var(--highlight);
+    /* background-color: var(--btnBg);
+    color: var(--btnFontColor); */
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Simple website</title>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+        <header>
+            <div>
+                <h1>
+                    <a href="index.html" class="title">c a s c a i d</a>
+                </h1>
+                <nav>
+                    <a href="create.html" class="btn lnk">Create</a>
+                    <a href="pay.html" class="btn lnk">Pay</a>
+                    <a href="about.html" class="btn lnk current">About</a>
+                    <a href="faq.html" class="btn lnk">FAQ</a>
+                </nav>
+            </div>
+        </header>
+        <div>
+            <button class="btn theme"></button>
+        </div>
+        <script src="js/app.js"></script>
+        <noscript>You need to enable JavaScript to view the full site.</noscript>
+    </head>
+    <body class="main light-theme" onload="if(localStorage.getItem('theme')=='dark-theme'){document.body.classList.add('dark-theme');}">
+        <!-- <p>
+            Cascaid was created to help open-source creators and maintainers get paid.
+        </p> -->
+        <div>
+            <h3 class="highlight">The Problem</h3>
+            <p>
+                Funding for open source software is a bit of a mess. Typically, funds (when there even are any) go only to those write user-facing software. Maintainers of projects
+                further down in the dependency chain are unlikely to see any of that.
+            </p>
+        </div>
+        <div>
+            <h3 class="highlight">A Solution</h3>
+            <p>
+                With <span style="color: var(--highlight)">cascaid</span>, project maintainers are able to mark portions of their incoming donations
+                to flow down to projects in their dependency chain.
+            </p>
+        </div>
+        <div>
+            <h3 class="highlight">Support</h3>
+            <p>
+                <span style="color: var(--highlight)">cascaid</span> does not collect any fees for this service. It does not run any ads. It does not track your behavior.
+                It does not sell any of your data.
+                If you would like <span style="color: var(--highlight)">cascaid</span> to continue existing and can afford to support it, donations are greatly
+                appreciated.
+            </p>
+        </div>
+        
+    </body>
+</html>

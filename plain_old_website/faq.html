@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Simple website</title>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+        <header>
+            <div>
+                <h1>
+                    <a href="index.html" class="title">c a s c a i d</a>
+                </h1>
+                <nav>
+                    <a href="create.html" class="btn lnk">Create</a>
+                    <a href="pay.html" class="btn lnk">Pay</a>
+                    <a href="about.html" class="btn lnk">About</a>
+                    <a href="faq.html" class="btn lnk current">FAQ</a>
+                </nav>
+            </div>
+        </header>
+        <div>
+            <button class="btn theme"></button>
+        </div>
+        <script src="js/app.js"></script>
+        <noscript>You need to enable JavaScript to view the full site.</noscript>
+    </head>
+    <body class="main light-theme" onload="if(localStorage.getItem('theme')=='dark-theme'){document.body.classList.add('dark-theme');}">
+        <div>
+            <h4 class="highlight">How much are the fees and how are they collected?</h4>
+            <p>
+                <span class="highlight">cascaid</span> does not collect any fees itself. There is, however, a flat <span class="highlight">2.9% + $0.30</span> transaction
+                fee from Stripe. Payments are set up as a single transaction from the payer to all the end payees (project maintainers)
+                at once in order to minimize transaction fees.
+            </p>
+            <h4 class="highlight">Okay, so what's the catch?</h4>
+            <p>
+                There isn't one. Much like many of the open source projects <span class="highlight">cascaid</span> was created to support,
+                the service lives or dies on donations alone. So I guess that's the catch: <span class="highlight">cascaid</span> might disappear at some point if it can't be
+                supported through donations.
+            </p>
+            <h4 class="highlight">Are recurring donations/subscriptions possible?</h4>
+            <p>
+                Recurring donations aren't set up yet. This is planned, though.
+            </p>
+            <h4 class="highlight">Some of my project's dependencies don't have a <span class="highlight">cascaid</span> or Stripe account, can I still add them as a downstream receiver?</h4>
+            <p>
+                Unfortunately no. The best thing you can do is tell them about <span class="highlight">cascaid</span> and see if they'd be willing to join. But please don't
+                spam them about it.
+            </p>
+            <h4 class="highlight">How can I support <span class="highlight">cascaid</span>?</h4>
+            <p>
+                The best way to support us is to add the <span  class="highlight">cascaid</span> disbursement node to your payment chain. The second best way is to directly donate to the
+                <span class="highlight">cascaid</span> node.
+            </p>
+        </div>
+    </body>
+</html>
