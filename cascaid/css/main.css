@@ -26,6 +26,7 @@ a {
 
 body {
     background: var(--bg);
+    position: relative;
     margin-left: 6vw;
     margin-right: 10vw;
 }
