@@ -9,7 +9,7 @@
     --orange: #d65d0e;
     --gray: #a89984;
     --white: #d5c4a1;
-    /* --white: #bdae93; */
+    --less_white: #bdae93;
 
     --lightColor: var(--blue);
     --darkColor: var(--black);
@@ -17,7 +17,7 @@
 
 *{
     color: var(--fontColor);
-    font-family: 'Space Mono', monospace;
+    font-family: 'space_monoregular', monospace;
 }
 
 a {
@@ -84,14 +84,16 @@ header nav {
     --bg: var(--lightColor);
     --fontColor: var(--darkColor);
     --btnBg: var(--darkColor);
-    --btnFontColor: var(--lightColor);
+    /* --btnFontColor: var(--lightColor); */
+    --btnFontColor: var(--darkColor);
     --highlight: var(--white);
 }
 .dark-theme {
     --bg: var(--darkColor);
     --fontColor: var(--lightColor);
     --btnBg: var(--lightColor);
-    --btnFontColor: var(--darkColor);
+    /* --btnFontColor: var(--darkColor); */
+    --btnFontColor: var(--lightColor);
     --highlight: var(--gray);
 }
 
@@ -113,12 +115,13 @@ header nav {
     padding-right: 0.8vw;
     padding-top: 0.4vw;
     padding-bottom: 0.4vw;
-    border-color: var(--btnFontColor);
-    background-color: var(--btnFontColor);
+    border-color: var(--bg);
+    background-color: var(--bg);
+    color: var(--highlight);
 }
 .lnk:hover {
     /* border-color: var(--highlight); */
-    color: var(--highlight);
+    color: var(--btnFontColor);
 }
 
 .current {
