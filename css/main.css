@@ -1,0 +1,134 @@
+:root {
+    --black: #282828;
+    --red: #cc241d;
+    --yellow: #d79921;
+    --blue: #458588;
+    --purple: #b16286;
+    --aqua: #689d6a;
+    --green: #98971a;
+    --orange: #d65d0e;
+    --gray: #a89984;
+    --white: #d5c4a1;
+    --less_white: #bdae93;
+
+    --lightColor: var(--blue);
+    --darkColor: var(--black);
+}
+
+*{
+    color: var(--fontColor);
+    font-family: 'space_monoregular', monospace;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background: var(--bg);
+    position: relative;
+    margin-left: 6vw;
+    margin-right: 10vw;
+    margin-top: 10vw;
+}
+
+p {
+    margin-left: 4vw;
+    margin-right: 4vw;
+    /* font-size: 2vw; */
+}
+
+h1 {color: var(--highlight)}
+h2 {color: var(--highlight)}
+h3 {color: var(--highlight)}
+h4 {color: var(--highlight)}
+
+header {
+    white-space: nowrap;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--bg);
+}
+
+header nav {
+    display: inline-block;
+    position: fixed;
+    right: 2%;
+    top: 5vw;
+    font-size: 2.5vw;
+}
+
+.title {
+    /* margin-left: -20px; */
+    display: inline-block;
+    color: var(--highlight);
+    font-size: 5vw;
+}
+
+.main {
+    margin-top: 15vw;
+}
+
+.btn {
+    border-radius: 3px;
+}
+
+.highlight {
+    color: var(--highlight);
+}
+
+/* #msg {
+    font-family: monospace;
+} */
+
+.light-theme {
+    --bg: var(--lightColor);
+    --fontColor: var(--darkColor);
+    --btnBg: var(--darkColor);
+    /* --btnFontColor: var(--lightColor); */
+    --btnFontColor: var(--darkColor);
+    --highlight: var(--white);
+}
+.dark-theme {
+    --bg: var(--darkColor);
+    --fontColor: var(--lightColor);
+    --btnBg: var(--lightColor);
+    /* --btnFontColor: var(--darkColor); */
+    --btnFontColor: var(--lightColor);
+    --highlight: var(--gray);
+}
+
+.theme {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    height: 7%;
+    width: 7%;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+    border: none;
+}
+.theme:focus {outline-style: none;}
+
+.lnk {
+    border: 0.4vw solid;
+    padding-left: 0.8vw;
+    padding-right: 0.8vw;
+    padding-top: 0.4vw;
+    padding-bottom: 0.4vw;
+    border-color: var(--bg);
+    background-color: var(--bg);
+    color: var(--highlight);
+}
+.lnk:hover {
+    /* border-color: var(--highlight); */
+    color: var(--btnFontColor);
+}
+
+.current {
+    border-color: var(--btnBg);
+    color: var(--highlight);
+    /* background-color: var(--btnBg);
+    color: var(--btnFontColor); */
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Simple website</title>
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../css/stylesheet.css" type="text/css" charset="utf-8" />
+        <header>
+            <div>
+                <h1>
+                    <a href="../index.html" class="title">jonnie diegelman</a>
+                </h1>
+                <nav>
+                    <a href="../weblog/index.html" class="btn lnk">weblog</a>
+                    <a href="../about.html" class="btn lnk">about</a>
+                </nav>
+            </div>
+        </header>
+        <div>
+            <button class="btn theme"></button>
+        </div>
+        <script src="../js/app.js"></script>
+        <noscript>You need to enable JavaScript to view the full site.</noscript>
+    </head>
+    <body class="main light-theme" onload="if(localStorage.getItem('theme')=='dark-theme'){document.body.classList.add('dark-theme');}">
+        <div>
+
+        </div>
+    </body>
+</html>
